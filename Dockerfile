@@ -18,6 +18,6 @@ WORKDIR /app
 COPY --from=builder /users-notifier .
 COPY config.yaml .
 
-EXPOSE 8080 9090
+EXPOSE 8080 9091
 
 CMD ["./users-notifier", "-config", "config.yaml"]

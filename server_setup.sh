@@ -21,7 +21,7 @@ docker run -d \
   --network "$NETWORK" \
   --restart unless-stopped \
   -p 8080:8080 \
-  -p 9091:9090 \
+  -p 9091:9091 \
   -v "$(pwd)/config.yaml:/app/config.yaml:ro" \
   -v "$LOG_DIR:/var/log/users-notifier" \
   "$APP_IMAGE"

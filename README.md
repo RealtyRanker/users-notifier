@@ -24,7 +24,7 @@ logging:
   file_path: "/var/log/users-notifier/app.log"
 
 metrics:
-  port: 9090      # порт Prometheus-метрик
+  port: 9091      # порт Prometheus-метрик
 ```
 
 Токен бота можно получить у [@BotFather](https://t.me/BotFather) командой `/newbot`.
@@ -58,16 +58,16 @@ curl -X POST http://localhost:8080/send \
 ### GET /healthz
 
 ```bash
-curl http://localhost:9090/healthz
+curl http://localhost:9091/healthz
 # ok
 ```
 
 ### GET /metrics
 
-Prometheus-метрики на порту `9090`:
+Prometheus-метрики на порту `9091`:
 
 ```bash
-curl http://localhost:9090/metrics
+curl http://localhost:9091/metrics
 ```
 
 | Метрика | Тип | Описание |
@@ -103,4 +103,4 @@ docker stop users-notifier
 | Порт на хосте | Порт в контейнере | Назначение |
 |---|---|---|
 | `8080` | `8080` | API (`/send`) |
-| `9091` | `9090` | Метрики и healthz |
+| `9091` | `9091` | Метрики и healthz |

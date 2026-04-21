@@ -9,4 +9,4 @@ logging:
   file_path: "/var/log/users-notifier/app.log"
 
 metrics:
-  port: 9090
+  port: 9091
