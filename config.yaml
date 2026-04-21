@@ -1,0 +1,12 @@
+telegram:
+  bot_token: ""   # your Telegram bot token from @BotFather
+
+server:
+  port: 8080
+
+logging:
+  level: "info"
+  file_path: "/var/log/users-notifier/app.log"
+
+metrics:
+  port: 9090
