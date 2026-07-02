@@ -23,6 +23,7 @@ docker run -d \
   -p 8080:8080 \
   -p 9091:9091 \
   -v "$(pwd)/config.yaml:/app/config.yaml:ro" \
+  -v "$(pwd)/bot_token:/etc/users-notifier/bot_token:ro" \
   -v "$LOG_DIR:/var/log/users-notifier" \
   "$APP_IMAGE"
 
