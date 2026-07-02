@@ -40,6 +40,7 @@ func main() {
 	ctx, cancel := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
 	defer cancel()
 
+	logger.Info("loading bot token", zap.String("file", cfg.Telegram.BotTokenFile))
 	tg := telegram.NewClient(cfg.Telegram.BotToken)
 	h := handler.New(tg, logger)
 

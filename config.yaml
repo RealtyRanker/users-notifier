@@ -1,5 +1,5 @@
 telegram:
-  bot_token: "8252101510:AAFvo3HspxzKjXXflZ9-L3pyvJvgevYRtDI"   # your Telegram bot token from @BotFather
+  bot_token_file: "/etc/users-notifier/bot_token"
 
 server:
   port: 8080
